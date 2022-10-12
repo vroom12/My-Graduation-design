@@ -1,11 +1,5 @@
-<script setup lang="ts">
-const props = defineProps<{
-  modelValue?: boolean;
-}>();
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <slot />
-  </div>
+  <div>login</div>
 </template>
