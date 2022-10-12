@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { useRoute, useRouter } from "vue-router";
+
+const route = useRoute();
+const router = useRouter();
+
+const dologin = () => {
+  router.push({
+    name: "about",
+  });
+};
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <h1 @click="dologin">home</h1>
 </template>
